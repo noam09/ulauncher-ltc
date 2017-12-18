@@ -49,7 +49,7 @@ class KeywordQueryEventListener(EventListener):
         urls = [
             ('Bitstamp', 'https://www.bitstamp.net/api/v2/ticker/ltc{}'.format(symbol[0]), 'last'),
             ('Bitfinex', 'https://api.bitfinex.com/v1/pubticker/ltc{}'.format(symbol[0]), 'last_price'),
-            ('CoinMarketCap', 'https://api.coinmarketcap.com/v1/ticker/litecoin', 'price_{}'.format(symbol[0]))
+            ('CoinMarketCap', 'https://api.coinmarketcap.com/v1/ticker/litecoin', 0, 'price_{}'.format(symbol[0]))
             ]
         # Loop through the APIs
         for i in range(len(urls)):
