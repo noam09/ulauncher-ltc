@@ -1,0 +1,20 @@
+{
+  "manifest_version": "1",
+  "api_version": "1",
+  "name": "Litecoin",
+  "description": "Display current Litecoin rate",
+  "developer_name": "noam09",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.3
+  },
+  "preferences": [
+    {
+      "id": "ltc",
+      "type": "keyword",
+      "name": "LTC",
+      "description": "Current Litecoin Rate",
+      "default_value": "ltc"
+    }
+  ]
+}
